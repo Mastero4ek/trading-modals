@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style-modal.css">
+    <script defer src="js/script.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="modal login">
+            <div class="container">
+                <div class="modal__wrapper login-wrapper">
+                    <div class="login-logo">
+                        <img src="./img/modal/logo.png" alt="logo">
+                    </div>
+
+                    <div class="modal__wrap login-wrap">
+                        <div class="modal__head login-head">
+                            <a href="#" class="modal__back login-back">
+                                <div class="modal__back-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#back-icon"></use>
+                                    </svg>
+                                </div>
+
+                                <span>Back</span>
+                            </a>
+
+                            <div class="modal__head-desc">Don’t have an accoount?</div>
+
+                            <a href="./register.html" class="modal__head-register login-btn">Register</a>
+                        </div>
+
+                        <div class="modal__body login-body">
+                            <div class="modal__body-text">
+                                <h1 class="title modal__title">Welcome back</h1>
+
+                                <div class="modal__desc">The spirit of innovation coupled with our superior customer
+                                    service is our most important core value and this makes us best</div>
+                            </div>
+
+                            <form id="login-form" class="login__form">
+                                <label class="modal-control login__form-control">
+                                    <input class="modal-input login__form-input required" name="user-name" type="text"
+                                        placeholder="Username">
+                                </label>
+
+                                <label id="login-password" class="modal-control login__form-control">
+                                    <input class="modal-input login__form-input required" name="password"
+                                        type="password" placeholder="Password">
+
+                                    <div class="modal-eye login__form-eye">
+                                        <svg id="login-password-open" class="icon-open">
+                                            <use xlink:href="./img/icons.svg#eye"></use>
+                                        </svg>
+
+                                        <svg id="login-password-close" class="icon-close hide-input">
+                                            <use xlink:href="./img/icons.svg#eye-slash"></use>
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <a class="modal__forgot" href="#">Forgot password?</a>
+
+                                <div class="modal__send-btn login-send">
+                                    <button type="submit" class="button">
+                                        <span>Submit</span>
+
+                                        <img src="./img/modal/arrow-in.svg" alt="arrow">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

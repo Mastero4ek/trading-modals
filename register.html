@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style-modal.css">
+    <script defer src="js/script.js"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="modal register">
+            <div class="container">
+                <div class="modal__wrapper register-wrapper">
+                    <div class="modal__wrap register-wrap">
+                        <div class="modal__head register-head">
+                            <a href="#" class="modal__back register-back">
+                                <div class="modal__back-icon">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/icons.svg#back-icon"></use>
+                                    </svg>
+                                </div>
+
+                                <span>Back</span>
+                            </a>
+
+                            <div class="modal__head-desc">Don’t have an account?</div>
+
+                            <a href="./login.html" class="modal__head-register register-btn">Login</a>
+                        </div>
+
+                        <div class="modal__body login-body">
+                            <div class="modal__body-text register-text">
+                                <h1 class="title modal__title">Registration</h1>
+
+                                <div class="modal__desc register-desc">Securely access and manage your account 24 hours
+                                    a day, 7 days
+                                    a week. Don't already have an account? Open one now.</div>
+                            </div>
+
+                            <form id="register-form" class="register__form">
+                                <div class="register__form-wrap">
+                                    <h3 class="modal__subtitle">Personal information</h3>
+
+                                    <label class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input required" name="first-name"
+                                            type="text">
+                                        <span placeholder="First name"></span>
+                                    </label>
+
+                                    <label class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input required" name="last-name"
+                                            type="text">
+                                        <span placeholder="Last name"></span>
+                                    </label>
+
+                                    <label class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input required" name="mobile-number"
+                                            type="tel">
+                                        <span placeholder="Mobile number"></span>
+                                    </label>
+
+                                    <label class="modal-control register__form-control">
+                                        <select class="modal-select required" name="select-country">
+                                            <option value="" selected disabled hidden></option>
+                                            <option value="new-york">New York</option>
+                                            <option value="texas">Texas</option>
+                                            <option value="alifornia">California</option>
+                                            <option value="boston">Boston</option>
+                                        </select>
+
+                                        <span placeholder="Select Country"></span>
+                                    </label>
+
+                                    <label class="modal-control register__form-control">
+                                        <select class="modal-select required" name="state">
+                                            <option value="" selected disabled hidden></option>
+                                            <option value="alaska">Alaska</option>
+                                            <option value="colorado">Colorado</option>
+                                            <option value="florida">Florida</option>
+                                            <option value="ohio">Ohio</option>
+                                            <option value="wyoming">Wyoming</option>
+                                            <option value="oregon">Oregon</option>
+                                            <option value="nevada">Nevada</option>
+                                        </select>
+
+                                        <span placeholder="State"></span>
+                                    </label>
+                                </div>
+
+                                <div class="register__form-wrap">
+                                    <h3 class="modal__subtitle">Set account credentials</h3>
+
+                                    <label class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input required" name="email"
+                                            type="mail">
+                                        <span placeholder="Email"></span>
+                                    </label>
+
+                                    <label id="register-password" class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input required" name="password"
+                                            type="password">
+                                        <span placeholder="Password"></span>
+
+                                        <div class="modal-eye register__form-eye">
+                                            <svg id="register-password-open" class="icon-open">
+                                                <use xlink:href="./img/icons.svg#eye"></use>
+                                            </svg>
+
+                                            <svg id="register-password-close" class="icon-close hide-input">
+                                                <use xlink:href="./img/icons.svg#eye-slash"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+
+                                    <label id="confirm-password" class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input required" name="confirm-password"
+                                            type="password">
+                                        <span placeholder="Confirm Password"></span>
+
+                                        <div class="modal-eye register__form-eye">
+                                            <svg id="register-password-open" class="icon-open">
+                                                <use xlink:href="./img/icons.svg#eye"></use>
+                                            </svg>
+
+                                            <svg id="register-password-close" class="icon-close hide-input">
+                                                <use xlink:href="./img/icons.svg#eye-slash"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="register__form-wrap">
+                                    <h3 class="modal__subtitle">Account details</h3>
+
+                                    <div class="modal-control register__form-control">
+                                        <select class="modal-select required" name="account-type">
+                                            <option value="" selected disabled hidden></option>
+                                            <option value="beginners">Beginners</option>
+                                            <option value="intermediate">Intermediate</option>
+                                            <option value="advanced">Advanced</option>
+                                            <option value="professional">Professional</option>
+                                            <option value="premium">Premium</option>
+                                        </select>
+
+                                        <span placeholder="Account type"></span>
+                                    </div>
+
+                                    <div class="modal-control register__form-control">
+                                        <input class="modal-input register__form-input" name="referer-code" type="text"
+                                            placeholder="Referer code">
+                                    </div>
+                                </div>
+
+                                <div class="register__form-wrap">
+                                    <div class="modal-control register__form-control checkbox-control">
+                                        <input class="modal-checkbox" type="checkbox" id="checkbox" name="check">
+
+                                        <label for="checkbox">
+                                            <span>I have read and agree to the&nbsp;</span>
+
+                                            <a href="#" class="modal-link">Terms & Conditions</a>
+                                        </label>
+                                    </div>
+
+                                    <div class="modal__send-btn register-send">
+                                        <button type="submit" class="button">
+                                            <span>Submit</span>
+
+                                            <img src="./img/modal/arrow-in.svg" alt="arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
